@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<!-- Filter Buttons -->
+<div class="filters">
+  <button data-filter="all">All</button>
+  <button data-filter="nature">Nature</button>
+  <button data-filter="icons">Icons</button>
+  <button data-filter="logo">Logo</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+  <img src="images/nature1.jpg" data-category="nature">
+  <img src="images/nature2.jpg" data-category="nature">
+  <img src="images/software.jpg" data-category="icons">
+  <img src="images/web.jpg" data-category="icons">
+  <img src="images/mobile.jpg" data-category="icons">
+  <img src="images/data.png" data-category="icons">
+  <img src="images/mylogo.png" data-category="logo">
+  <img src="images/aiu.png" data-category="logo">
+  <img src="images/capture.GIF" data-category="logo">
+  <img src="images/aisad.jpg" data-category="logo">
+  <img src="images/calculator.png" data-category="logo">
+  <img src="images/dataa.jpg" data-category="icons">
+  <img src="images/count.jpg" data-category="icons">
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <span class="close">&times;</span>
+  <button class="prev">❮</button>
+  <img class="lightbox-img">
+  <button class="next">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Abubakar Ibrahim Umar</title>  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+          *{
+            margin: 0;
+            padding: 0ch;
+            box-sizing:border-box;
+        }
+  body {
+  font-family: "Poppins",sans-serif!important;}
+        .header h2{
+                    
+        color: rgb(252, 70, 5);
+        margin-left: 20px;
+       
+        word-spacing: 5px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        font-family: "Poppins", sans-serif !important;
+        }
+        .main{
+           display:flex;
+          flex-direction:row;
+          align-items:center;
+          justify-content:center;
+           padding:25px;
+           font-family: "Poppins", sans-serif !important;
+           line-height:25px;
+        }
+ .header{
+    display:flex; 
+    margin-bottom:10px;
+      box-shadow:2px 2px lightgrey;
+      padding:15px;     
+    border-radius:20px;
+    border-top:2px solid lightgrey;
+    z-index:1;
+    position:sticky;
+    top:0;
+    left:0;
+    background-color:white;
+    right:0;
+  }
+   .homeimg{
+         margin-left:auto;
+         margin-top:20px;
+        }
+    .homeimg a{
+        margin-right:25px;
+        font-size:20px;
+        text-decoration:none;
+        color:black;
+    }
+  
+    .homeimg a:hover{
+      opacity:0.5; 
+       text-decoration:none;  
+       background-color:lightgrey;
+       padding:6px; 
+        border-radius:16px;
+        
+    }
+   .main .section h2{
+    padding:15px;
+     margin-bottom:10px;
+     border-bottom:3px solid orange;
+  }
+  section p{
+    background:  linear-gradient(to bottom,orange,white);
+    padding:20px;
+    border-radius:20px;
+    box-shadow:2px 2px lightgrey ;
+    margin-bottom:15px;
+  }
+  .main .section li {
+    text-decoration:none;
+    padding:10px;
+    list-style-type:none;
+     border-bottom:2px solid black;
+  }
+  .main .section li a{
+    text-decoration:none;
+    padding:10px;
+    color:black;
+  
+  }
+  
+ .section footer {
+    text-align: center;
+    padding: 30px  10px;
+    
+    border-top: 1px solid #eee;
+}
+
+.section .cta-box {
+    background-color: #ecf0f1!important;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: rgb(252, 70, 5);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+  .main img{
+    height:200px;
+    display:block;
+    border-radius:30px;
+    margin-top:50px;
+     margin-bottom:50px;
+  }
+
+ .img{
+    height:200px;
+    display:block;
+   width:280px;
+  }
+  .section span a{
+    color:black;
+  }
+  .button:hover{
+   color: rgb(252, 70, 5);
+   background:white;
+   border:1.5px solid rgb(252, 70, 5);
+}
+  .social ul{
+         display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+           background: orange ;
+           padding:25px;
+           text-align:center;
+           font-family: "Poppins", sans-serif !important;
+  }
+  .social li{
+    list-style-type:none;
+    background:black;
+    color:white;
+    outline:white 2px solid;
+    padding:30px;
+    font-size:25px;
+    border-radius:65px;
+    margin:25px;
+  }
+  h1{
+  text-align:center;
+  margin-bottom:15px !important;
+}
+  .social li a{
+    color:white;
+    text-align:center;
+  }
+  .nav-container{
+    display:flex;
+    z-index:1;
+    height:auto;
+    transition:1s;
+  }
+  .nav{
+    position:fixed;
+    box-shadow:2px 0px 1px grey ;
+    top :0;
+    bottom:0;
+    left:0;
+    z-index:999;
+    width:250px;
+    transition:1s;
+    background-color:orange;
+    animation:mymove 0.28s;
+    display:none;
+    padding:20px;
+    overflow-y:auto;
+  }
+  .nav ul li {
+    list-style-type:none;
+    nargin:20px;
+    padding:20px;
+  }
+  .nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-weight:800;
+  }
+  .nav ul li a:hover{
+    text-decoration:none;
+    color:black;
+    font-weight:800;
+
+  }
+  frame{
+    animation:mymove  07s;
+    
+  }
+  .cancel{
+    margin-left:30px;
+    background:transparent;
+    border:none;
+    font-size:50px;
+  }
+  @keyframes mymove{
+    0%{width:0;}
+    100%{width:250px;}
+  }
+  @media (min-width:650px){
+   .main .section .grid,.link-grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:10px;
+    }    
+    
+  }     
+    </style>
+</head>
+<body>
+
+  <div class="header">
+        <h2>
+           AiU DeV
+        </h2>
+      
+    <DIV class="homeimg">
+        <a id="navBar"><i class="fas fa-bars"></i></a>
+    </DIV>
+    </div>
+  <div class="nav-container">
+    <div id="nav" class="nav">
+      <div>
+      <ul>
+                 <li class="li4"><a target="blank" href="blog.html">BLOG </a></li>
+                <li class="li2"><a target="blank" href="#main">ABOUT</a></li>
+                <li class="li3"><a target="blank" href="resume.html">RESUME</a></li>
+                <li class="li5"><a target="blank" href="project.html">PROJECTS</a></li>
+                <li class="li6"><a target="blank"href="portfolio.html">PORTFOLIO</a></li>
+                  
+            </ul>
+        </div>
+      <div>
+        <button id="cancel-btn" class="cancel">&times;</button>
+        </div>
+    </div>
+    <div id="overlay" class="body-content">
+  
+  <div id="main" class="main">
+  <section class="section">
+    <h2>About AiU DeV</h2>
+    <p>i'm Abubakar Ibrahim Umar
+       am a passionate junior full-stack developer with a strong
+      foundation in building scalable web applications, complemented by
+      expertise in data analysis and visualization. My mission is to bridge the gap between robust 
+      software engineering and data-driven strategy to deliver high-impact digital solutions.
+            </p>
+  </section>
+  </div>
+      <div>
+  <div class="main">
+  <section class="section">
+    <h2>education</h2>
+    <p>Bachelor in computer science  Northwest unversity Kano Nigeria present <span><a href="https://nwu.edu.ng">www.nwu.edu.ng</a></span></p>
+    <p>aitshub, fullstack developement present <span><a href="https://aitshub.com.ng">www.aitshub.com.ng</a></span></p>
+    <p>sololearn, web developement, present<br> <span><a href="https://sololearn.com">www.sololearn.com </a></span></p>
+ 
+  </section>
+  </div>
+   <div class="main">
+  <section class="section">
+    <h2>skills</h2>
+    <ul>
+      <dt><h3>web technologies</h3></dt>
+      <dd> - HTML</dd>
+      <dd> - CSS</dd>
+      <dd> - JavaScript</dd>
+      <dt><h3>libraries</h3></dt>
+      <dd> - reactNative</dd>
+      <dd> - vueJS</dd>
+      <dd> - express js</dd>
+     <dt><h3>pragramming languages</h3></dt>
+      <dd> - Python</dd>
+      <dd> - C,C++,C#</dd>
+      <dd> - Java</dd>
+    </ul> 
+    
+ 
+  
+    
+  </section>
+  </div>
+  <div class="main">
+  <section class="section">
+    <h2>my dual focus</h2>
+    <div class="grid">
+    <p>- <b>web developement</b> </p>
+    <p>- <b>mobile app developement</b></p>
+     <p>- <b>data analysis and DB</b></p>
+       <p>- <b>software design (UI/UX)</b></p>
+      <p>- <b>project management</b></p>
+      <P><b> - software maintenance</b></P>
+    </div>
+    
+  </section>
+  </div>
+  <div class="main">
+  <section class="section">
+    <h2>services</h2>
+    <div class="grid">
+      <div class="grid-1">
+    <p>- <b>web developement</b> </p>
+    <img class="img" src="images/count.jpg">
+      </div>
+      <div class="grid-2">
+    <p>- <b>mobile app developement</b></p>
+     <img class="img" src="images/mobile.jpg">
+      </div>
+      <div class="grid-3">
+     <p>- <b>data analysis and DB</b></p>
+     <img class="img" src="images/web.jpg">
+      </div>
+      <div class="grid-4">
+       <p>- <b>software design (UI/UX)</b></p>
+     <img  class="img"src="images/software.jpg">
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="social">
+   <section class="section">
+      <h1>contact me</h1>
+      <ul>
+        <div class="link-grid">
+        <li><a href="https://www.facebook.com/profile.php?id=61550742478494"> <i class="fab fa-facebook"> </i></a></li>
+        <li><a href="https://github.com/abubakar1239"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.youtube.com/c/search/aiudev"><i class="fab fa-youtube"> </i></a></li>
+            <li><a href="https://www.linkedin.com/in/abubakar-ibrahim-umar-4136b237b" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.snapchat.com/add/assiddeeq2004"><i class="fab fa-snapchat-ghost"> </i></a></li>
+            <li><a href="mailto:assiddeeqdev@gmail.com"><i class="fas fa-envelope"> </i></a></li>
+        </div>
+      </ul>
+      
+    </section>
+  </div>
+      <section class="section">
+   <footer>
+            <div class="cta-box">
+                <h3>Ready to get more tips?</h3>
+                <span>Don't miss our next post! Subscribe to our newsletter </span><br>
+                <a href="form.html" class="button">Subscribe Now</a>
+            </div>
+            <span class="copyright">&copy; 2026 aiu dev. All rights reserved.</span>
+        </footer>
+      </section>
+  </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
