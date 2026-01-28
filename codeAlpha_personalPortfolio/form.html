@@ -172,6 +172,14 @@ footer {
 }
 body {font-family: "Poppins", sans-serif !important;
 }
+.text-area{
+     width:min(350px,300px);
+     height:min(100px,150px);
+     padding:min(20px,8%);
+     box-sizing:border-box; 
+     border-radius:25px; 
+     border:2px black solid;
+}
   
 </style>
 <head>
@@ -216,8 +224,8 @@ body {font-family: "Poppins", sans-serif !important;
      
          <input class="input3" type="email"autocomplete placeholder="e-mail" required id="email" name="email">
    
-         <input class="input4" type="text"placeholder="message aiu dev" required id="number" name="message">
-         <<input onclick="checkForm()" class="button" type="submit">
+         <textarea class="text-area" placeholder="message" name="message" required style="resize:none;"></textarea>
+         <input onclick="checkForm()" class="button" type="submit">
     </form>
   </div>
        <div class="socialmedia">
@@ -229,7 +237,7 @@ body {font-family: "Poppins", sans-serif !important;
             <li><a target="blank" href="mailto:assiddeeqdev@gmail.com"><i class="fas fa-envelope"></i></a></li>
         </div>
      <footer class="pop-up-container" id="footer">
-    <p>&copy; 2025 aiudev. All rights reserved.</p>
+    <p>&copy; 2026 aiudev. All rights reserved.</p>
   </footer>
 </body>
 <script>

@@ -78,12 +78,15 @@ nav a {
     color: #7f8c8d;
     margin-bottom: 20px;
 }
-
+.post-img{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 .post-image {
-    width: 100%;
-    height: auto;
+    width: 350px;
     margin-bottom: 25px;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .post-content h2 {
@@ -92,7 +95,10 @@ nav a {
     border-left: 4px solid orange;
     padding-left: 10px;
     margin-top: 30px;
+  margin-left:10px;
     margin-bottom: 15px;
+  bix-sizing:border-box;
+  padding-right:10px;
 }
   body {
   font-family: "Poppins", sans-serif;
@@ -103,6 +109,7 @@ nav a {
 .post-content p, .post-content ul {
     margin-bottom: 20px;
     font-size: 1.1em;
+  padding-right:10px;
     margin-left:20px;
 }
 footer {
@@ -143,6 +150,11 @@ footer {
       margin-bottom: 20px;
     
   }
+  @media(min-width:650px){
+   .post-img .post-image{
+      width:600px;
+    }
+  }
 
     </style>
     <meta charset="UTF-8">
@@ -164,9 +176,9 @@ footer {
         <article class="blog-post">
             <h3 class="post-title">The 5 Essential Tips for Beginner Bloggers in 2025</h3>
             <p class="post-meta">Published on <time datetime="2025-09-25">September 25, 2025</time> by **[Abubakar Ibrahim Umar]**</p>
-            
+          <siv class="post-img">
             <img src="images/mylogo.png" alt="A relevant image illustrating the blog topic" class="post-image">
-
+          </div>
             <div class="post-content">
                 <p>Welcome to the world of blogging! Starting out can feel overwhelming, but with the right focus, you can quickly build a valuable audience. This guide breaks down the five most crucial things you need to know today.</p>
 
